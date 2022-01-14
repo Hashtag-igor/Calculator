@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Roboto:wght@100;300;400;500;700&family=Teko:wght@500&display=swap');
+
+*{
+    text-decoration: none;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 3px solid #ececec;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #000000;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Teko', sans-serif;
+    border-radius: 5px;
+}
+
+.instagram:hover{
+    background-color: #fc2424;
+}
+
+.linkedin:hover{
+    background-color: #386ac7;
+}
+
+.github:hover{
+    background-color: #000000;
+}
+
+.linktree:hover{
+    background-color: #249209;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+
+/* Responsive area */
+
+@media screen and (max-width: 700px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    header{
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .logo{
+        margin-bottom: 30px;
+        height: 90px;
+        width: 90px;
+    }
+
+    ul{
+        width: 500px;
+        border: 1px solid #0c004e;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    ul{
+        flex-wrap: wrap;
+        width: 410px;
+    }
+
+}
+
+@media screen and (max-width: 470px){
+    ul{
+        flex-wrap: wrap;
+        width: 350px;
+        border: none;
+    }
+    
+    a{
+        font-size: 22px;
+    }
+}
